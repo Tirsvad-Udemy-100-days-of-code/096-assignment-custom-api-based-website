@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-22 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | pending |
-| 2026-11-22 | Accepted | Jens Tirsvad Nielsen | S01 | Accepted after review RC-010 (stand-in for S01, not independent) | pending |
+| 2026-11-22 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [32c2177] |
+| 2026-11-22 | Accepted | Jens Tirsvad Nielsen | S01 | Accepted after review RC-010 (stand-in for S01, not independent) | [32c2177] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Superseded by ADR-NNNN`.
 
@@ -48,3 +48,4 @@ Use the Potter API by fedeperin (option 3), read the `en` language path, and kee
 ---
 
 [BC-001]: ../business-case.md
+[32c2177]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/096-assignment-custom-api-based-website/commit/32c21773dbcb01ce83558dd4398d4bbdaae00875
