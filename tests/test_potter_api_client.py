@@ -18,10 +18,10 @@ FIXTURE = Path(__file__).parent / "fixtures" / "characters.json"
 def _serve(monkeypatch: pytest.MonkeyPatch, payload: Any) -> None:
     """@brief Make the client read `payload` instead of calling the network."""
 
-    def fake_urlopen(request: Any, timeout: float) -> io.BytesIO:
+    def fake_open(request: Any, timeout: float) -> io.BytesIO:
         return io.BytesIO(json.dumps(payload).encode("utf-8"))
 
-    monkeypatch.setattr(potter_api_client.urllib.request, "urlopen", fake_urlopen)
+    monkeypatch.setattr(potter_api_client, "open_url", fake_open)
 
 
 @pytest.fixture
@@ -65,7 +65,7 @@ def test_network_error_raises_unavailable(monkeypatch: pytest.MonkeyPatch) -> No
     def failing(request: Any, timeout: float) -> None:
         raise urllib.error.URLError("offline")
 
-    monkeypatch.setattr(potter_api_client.urllib.request, "urlopen", failing)
+    monkeypatch.setattr(potter_api_client, "open_url", failing)
     with pytest.raises(ApiUnavailableError):
         PotterApiClient().list_characters()
 

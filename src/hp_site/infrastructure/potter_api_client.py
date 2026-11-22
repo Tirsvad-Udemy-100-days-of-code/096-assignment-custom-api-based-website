@@ -11,6 +11,18 @@ from hp_site.domain.character import Character
 from hp_site.domain.errors import ApiUnavailableError, CharacterNotFoundError
 
 
+def open_url(request: urllib.request.Request, timeout: float) -> Any:
+    """@brief Open a request over HTTPS only.
+
+    @details An opener with only the HTTPS handler refuses file and ftp addresses.
+    @param request The request to send.
+    @param timeout Seconds to wait for an answer.
+    @return The response object.
+    """
+    opener = urllib.request.build_opener(urllib.request.HTTPSHandler())
+    return opener.open(request, timeout=timeout)
+
+
 def parse_character(raw: dict[str, Any]) -> Character:
     """@brief Turn one JSON object of the API into a Character.
 
@@ -60,7 +72,7 @@ class PotterApiClient(CharacterClient):
             headers={"User-Agent": constants.API_USER_AGENT},
         )
         try:
-            with urllib.request.urlopen(request, timeout=self._timeout) as response:
+            with open_url(request, self._timeout) as response:
                 payload = json.load(response)
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as err:
             raise ApiUnavailableError("The character service is not available") from err
