@@ -1,0 +1,5 @@
+[
+  {"fullName": "Harry James Potter", "nickname": "Harry", "hogwartsHouse": "Gryffindor", "interpretedBy": "Daniel Radcliffe", "children": ["James Sirius Potter", "Lily Luna Potter"], "image": "https://example.test/harry.png", "birthdate": "Jul 31, 1980", "index": 0},
+  {"fullName": "Draco Malfoy", "nickname": "Draco", "hogwartsHouse": "Slytherin", "interpretedBy": "Tom Felton", "children": ["Scorpius Malfoy"], "image": "https://example.test/draco.png", "birthdate": "Jun 5, 1980", "index": 1},
+  {"fullName": "Luna Lovegood", "nickname": "Luna", "hogwartsHouse": "Ravenclaw", "interpretedBy": "Evanna Lynch", "children": [], "image": "https://example.test/luna.png", "birthdate": "Feb 13, 1981", "index": 2}
+]
