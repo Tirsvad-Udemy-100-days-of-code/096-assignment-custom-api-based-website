@@ -105,6 +105,7 @@ This project is released under the license in [LICENSE][license].
 - [Repository][repository]
 - [Documentation][documentation]
 - [Issue tracker][issues]
+- [Wiki][wiki] in English, Danish and Bahasa Malaysia, with the lessons of each step and the reflection
 
 ## 📎 Appendix: Project documents
 
@@ -126,6 +127,7 @@ project has no such document yet.
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/096-assignment-custom-api-based-website
 [documentation]: ./docs/setup.md
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/096-assignment-custom-api-based-website/issues
+[wiki]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/096-assignment-custom-api-based-website/wiki
 [setup]: ./docs/setup.md
 [license]: ./LICENSE
 [api]: https://potterapi-fedeperin.vercel.app/
