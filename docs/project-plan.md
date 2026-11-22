@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-22 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | pending |
-| 2026-11-22 | Accepted | Jens Tirsvad Nielsen | S01 | Accepted after review RC-003 (stand-in for S01, not independent) | pending |
+| 2026-11-22 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [9ebd5b7] |
+| 2026-11-22 | Accepted | Jens Tirsvad Nielsen | S01 | Accepted after review RC-003 (stand-in for S01, not independent) | [9ebd5b7] |
 
 ---
 
@@ -79,3 +79,4 @@ MIL-001 -> MIL-002 -> MIL-003 -> MIL-004 -> MIL-005
 
 [BC-001]: ./business-case.md
 [SA-001]: ./stakeholder-analysis.md
+[9ebd5b7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/096-assignment-custom-api-based-website/commit/9ebd5b70bcdc84dd3c9c0717dfb3daa949a76ed5
