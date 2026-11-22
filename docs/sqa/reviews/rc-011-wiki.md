@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-22 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-11-22 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [a6501e9] |
 
 ---
 
@@ -56,3 +56,4 @@ Go for the merge — every Mandatory criterion passes except criterion 14, which
 ---
 
 [MIL-005]: ../../milestones/mil-005-wiki.md
+[a6501e9]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/096-assignment-custom-api-based-website/commit/a6501e9ab57c144dd8d18b5ebf10fe39ff5e9e04
