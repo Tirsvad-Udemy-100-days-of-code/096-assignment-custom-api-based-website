@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ character.full_name }} - {{ site_title }}{% endblock %}
+{% block content %}
+<article class="profile">
+  {% if character.image %}<img src="{{ character.image }}" alt="{{ character.full_name }}">{% endif %}
+  <div>
+    <h2>{{ character.full_name }}</h2>
+    <dl>
+      <dt>Nickname</dt><dd>{{ character.nickname }}</dd>
+      <dt>House</dt><dd><a href="{{ url_for('house', name=character.house) }}">{{ character.house }}</a></dd>
+      <dt>Played by</dt><dd>{{ character.actor }}</dd>
+      <dt>Born</dt><dd>{{ character.birthdate }}</dd>
+      <dt>Children</dt><dd>{{ character.children | join(", ") or "none" }}</dd>
+    </dl>
+  </div>
+</article>
+{% endblock %}

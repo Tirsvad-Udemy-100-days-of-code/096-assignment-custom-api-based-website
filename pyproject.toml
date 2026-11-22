@@ -24,7 +24,7 @@ dev = [
 where = ["src"]
 
 [tool.setuptools.package-data]
-hp_site = ["templates/*.html", "static/*.css"]
+hp_site = ["presentation/templates/*.html", "presentation/static/*.css"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

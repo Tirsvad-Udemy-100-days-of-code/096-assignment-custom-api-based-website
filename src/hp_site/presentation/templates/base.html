@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_title }}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1><a href="{{ url_for('home') }}">{{ site_title }}</a></h1>
+    <nav>
+      <a href="{{ url_for('home') }}">All</a>
+      {% for name in houses %}
+      <a href="{{ url_for('house', name=name) }}">{{ name }}</a>
+      {% endfor %}
+    </nav>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+</body>
+</html>
