@@ -4,7 +4,7 @@
 
 ## What this step is
 
-The route `/house/<name>` lists the characters of one house.
+The route `/house/<name>` lists the characters of one house, for example `/house/gryffindor`.
 
 ## What was done
 

@@ -4,7 +4,7 @@
 
 ## Apa langkah ini
 
-Laluan `/house/<name>` menyenaraikan watak satu asrama.
+Laluan `/house/<name>` menyenaraikan watak satu asrama, contohnya `/house/gryffindor`.
 
 ## Apa yang dilakukan
 
