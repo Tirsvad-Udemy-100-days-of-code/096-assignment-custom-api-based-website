@@ -113,7 +113,6 @@ project has no such document yet.
 
 | Document | What it tells you |
 | --- | --- |
-| [AGENTS.md][agents] | The rules contributors follow in this repository |
 | [Business Case][BC-001] | Why the project exists, its scope and success criteria |
 | [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
 | [Project Plan][PP-001] | The gateways and their schedule |
@@ -127,7 +126,6 @@ project has no such document yet.
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/096-assignment-custom-api-based-website
 [documentation]: ./docs/setup.md
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/096-assignment-custom-api-based-website/issues
-[agents]: ./AGENTS.md
 [setup]: ./docs/setup.md
 [license]: ./LICENSE
 [api]: https://potterapi-fedeperin.vercel.app/
