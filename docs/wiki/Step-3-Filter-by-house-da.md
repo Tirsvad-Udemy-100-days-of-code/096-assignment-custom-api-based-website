@@ -4,7 +4,7 @@
 
 ## Hvad trinnet er
 
-Ruten `/house/<name>` viser figurerne i ét hus.
+Ruten `/house/<name>` viser figurerne i ét hus, for eksempel `/house/gryffindor`.
 
 ## Hvad jeg gjorde
 

@@ -37,7 +37,7 @@ The site lists characters, filters them by Hogwarts house and shows one characte
 
 ![Step 2: all characters](docs/images/step-2-all-characters.png)
 
-**Step 3. Filter by house.** `/house/<name>` lists one house.
+**Step 3. Filter by house.** `/house/<name>` lists one house, for example `/house/gryffindor`.
 
 ![Step 3: one house](docs/images/step-3-house-filter.png)
 
