@@ -25,3 +25,18 @@ API_USER_AGENT: str = "hp-site/0.1"
 
 ## Hogwarts houses, in the order the website lists them.
 HOUSES: tuple[str, ...] = ("Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin")
+
+## URL rules of the website.
+ROUTE_HOME: str = "/"
+ROUTE_HOUSE: str = "/house/<name>"
+ROUTE_CHARACTER: str = "/character/<int:index>"
+
+## Messages shown to the visitor.
+MESSAGE_NOT_FOUND: str = "We could not find that page or character."
+MESSAGE_API_DOWN: str = (
+    "The wizarding world is out of reach right now. Please try again later."
+)
+
+## HTTP status codes used by the website.
+STATUS_NOT_FOUND: int = 404
+STATUS_SERVICE_UNAVAILABLE: int = 503
