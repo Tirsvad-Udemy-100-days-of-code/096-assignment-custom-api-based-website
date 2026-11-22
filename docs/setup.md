@@ -54,3 +54,12 @@ Fix every finding before pushing.
 
 The `.env` file holds personal tokens for the git host. It is ignored by git and
 is never read, imported or tested by the project.
+
+## Screenshots
+
+The screenshots in `docs/images/` are taken in Docker containers, never on the host
+desktop. Docker with Linux containers is needed:
+
+```bash
+PLAYWRIGHT_IMAGE=mcr.microsoft.com/playwright/python:v1.55.0-noble bash tests/e2e/capture.sh
+```
