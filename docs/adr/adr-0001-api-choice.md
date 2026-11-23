@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-22 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [32c2177] |
-| 2026-11-22 | Accepted | Jens Tirsvad Nielsen | S01 | Accepted after review RC-010 (stand-in for S01, not independent) | [32c2177] |
+| 2026-11-22 | Deprecated | Jens Tirsvad Nielsen | S01 | Accepted after review RC-010 (stand-in for S01, not independent) | [32c2177] |
+| 2026-11-23 | Accepted | Jens Tirsvad Nielsen | S01 | Corrected the statement about PotterDB; accepted after review RC-012 (stand-in for S01, not independent) | pending |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Superseded by ADR-NNNN`.
 
@@ -21,7 +21,7 @@ Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Supers
 The lecture names the Potter API at `potterapi.com`, which is retired. The project needs a free, key-less, read-only REST API that returns characters with their house. Constraints: no API key in the repository, JSON over HTTPS, stable field names. Options checked on 2026-11-22:
 
 1. `hp-api.onrender.com`: the service answers "Service Suspended", so it is unusable.
-2. PotterDB at `api.potterdb.com`: answers, but uses the JSON:API envelope and has no house filter on characters.
+2. PotterDB at `api.potterdb.com`: answers, uses the JSON:API envelope, and filters on the server (`filter[house_eq]=Ravenclaw`), pages (`page[size]`, `page[number]`) and returns one character by slug. It is documented at `https://docs.potterdb.com/apis/rest`. It was not chosen because its envelope needs more client code; a later check on 2026-11-22 also found its host refusing TLS connections from the development machine and from Docker.
 3. Potter API by fedeperin at `potterapi-fedeperin.vercel.app`: answers; plain JSON arrays with `fullName`, `nickname`, `hogwartsHouse`, `interpretedBy`, `children`, `image`, `birthdate` and `index`; also serves houses and spells.
 
 ## Decision
